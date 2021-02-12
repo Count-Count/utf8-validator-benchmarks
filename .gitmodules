@@ -10,3 +10,6 @@
 [submodule "faster-utf8-validator-c"]
 	path = faster-utf8-validator-c
 	url = https://github.com/zwegner/faster-utf8-validator.git
+[submodule "simd-json-rs"]
+	path = simd-json-rs
+	url = https://github.com/Count-Count/simd-json.git

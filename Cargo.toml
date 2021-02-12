@@ -5,4 +5,5 @@ members = [
     "simdjson-utf8-validators",
     "utf8-validator-benchmarks",
     "faster-utf8-validator-wrapper",
+    "simd-json-rs",
 ]
