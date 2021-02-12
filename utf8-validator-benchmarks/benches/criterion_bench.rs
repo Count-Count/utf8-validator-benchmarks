@@ -23,7 +23,7 @@ fn bench_file<T: Measurement>(c: &mut Criterion<T>, name: &str, is_valid: bool) 
         b.iter(|| assert!(faster_utf8_validator_wrapper::validate(&buf) == is_valid))
     });
     group.bench_function("simdjson_utf8_validator_rust", |b| {
-        b.iter(|| assert!(simd_json::validate_utf8(&buf).is_ok()))
+        b.iter(|| assert!(simd_json::validate_utf8(&buf).is_ok() == is_valid))
     });
 
     group.finish();
