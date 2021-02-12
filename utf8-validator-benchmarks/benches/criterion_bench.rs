@@ -20,7 +20,7 @@ fn bench_file<T: Measurement>(c: &mut Criterion<T>, name: &str, is_valid: bool) 
         b.iter(|| assert!(simdjson_utf8_validators::validate(&buf) == is_valid))
     });
     group.bench_function("faster_utf8_validator_c", |b| {
-        b.iter(|| assert!(faster_utf8_validator_c_wrapper_rs::validate(&buf) == is_valid))
+        b.iter(|| assert!(faster_utf8_validator_wrapper::validate(&buf) == is_valid))
     });
 
     group.finish();
