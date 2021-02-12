@@ -14,6 +14,7 @@ cpb = ["criterion-cycles-per-byte"]
 criterion = "0.3.3"
 simdjson-utf8-validators = { path = "../simdjson-utf8-validators" }
 faster-utf8-validator = { path = "../faster-utf8-validator-rs" }
+faster-utf8-validator-wrapper = { path = "../faster-utf8-validator-wrapper" }
 
 [target.'cfg(any(target_arch = "x86_64", target_arch = "x86"))'.dependencies.criterion-cycles-per-byte]
 version = "0.1.1"

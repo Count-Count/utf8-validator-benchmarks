@@ -4,3 +4,9 @@
 [submodule "faster-utf8-validator-rs"]
 	path = faster-utf8-validator-rs
 	url = https://github.com/simd-lite/faster-utf8-validator-rs
+[submodule "faster-utf8-validator-wrapper"]
+	path = faster-utf8-validator-wrapper
+	url = https://github.com/Count-Count/faster-utf8-validator-wrapper.git
+[submodule "faster-utf8-validator-c"]
+	path = faster-utf8-validator-c
+	url = https://github.com/zwegner/faster-utf8-validator.git
