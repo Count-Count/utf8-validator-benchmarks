@@ -30,7 +30,7 @@ fn main() {
         .uses_cxx11()
         .build();
         
-    println!("cargo:rustc-link-search=native={}/lib64", dst.display());
+    println!("cargo:rustc-link-search=native={}/lib", dst.display());
     println!("cargo:rustc-link-lib=static=simdjson");
     
     if let Some(stdlib) = get_cpp_link_stdlib() {
